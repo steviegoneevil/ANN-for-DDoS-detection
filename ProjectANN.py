@@ -167,8 +167,8 @@ def main():
             return int_names
                 
         def LabelEncoding(data): # encodes the categorical data within the csv used for training, turns the categorical values into integer values
-                
-            data = pandas.read_csv('Combined.csv', delimiter=',')
+
+            data = pandas.read_csv('Data.csv', delimiter=',')
             columnsToEncode = list(data.select_dtypes(include=['category', 'object']))  
             #print(data.dtypes) #Prints each columns d_type
             #print(columnsToEncode) #Prints categorical features
@@ -418,7 +418,7 @@ def main():
                     else:
                         return
                     
-        def LiveLabelEncoding(data): # same as LabelEncoding(), but use fir realtime
+        def LiveLabelEncoding(data): # same as LabelEncoding(), but use for realtime
             data = pandas.read_csv('LiveAnn.csv', delimiter=',') 
             columnsToEncode = list(data.select_dtypes(include=['category', 'object']))  
             print(columnsToEncode)
@@ -431,7 +431,7 @@ def main():
                     print ('error ' + feature)
             return data
             
-        def menu():            
+        def menu(): #Basic Menu           
             ans = True
             live = True
             while ans:
@@ -463,7 +463,7 @@ def main():
                     try:
                         while live:                                      
                             csv_interval_gather(cap)
-                            if MLP_Live_predict(cap, modelname, mlp_live_iteration) == "Attack":
+                            if MLP_Live_predict(cap, modelname, mlp_live_iteration) == "Attack": #if an attack had been detectedm then print date and time of the attack
                                 live = False
                                 print("DDoS ATTACK DETECTED! @ ", datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
                                 MLP_Live_predict(cap, modelname, mlp_live_iteration) == 0
