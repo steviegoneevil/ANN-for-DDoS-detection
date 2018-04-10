@@ -6,6 +6,8 @@ Download & Install Python 3.6 64-bit https://www.python.org/downloads/ (Make sur
 
 Download and install Wireshark (Make sure Tshark and WinPcap are installed aswell)
 
+Download & Install https://landinghub.visualstudio.com/visual-cpp-build-tools (Microsoft Visual C++ Redistributable for Visual Studio 2017)
+
 ## Installation
 
 Clone this repository to desired location
@@ -22,7 +24,7 @@ Open CMD
 
 'cd' to repository location
 
-python ProjectANNv9.py
+python ProjectANN.py
 
 Inpur number between 1-7, depending on what you would like to do
 
