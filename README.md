@@ -4,7 +4,7 @@
 
 Download & Install Python 3.6 64-bit https://www.python.org/downloads/ (Make sure you add it to PATH)
 
-Download and install Wireshark (Make sure Tshark and WinPcap are installed aswell)
+Download & install Wireshark (Make sure Tshark and WinPcap are installed aswell)
 
 Download & Install https://landinghub.visualstudio.com/visual-cpp-build-tools (Microsoft Visual C++ Redistributable for Visual Studio 2017)
 
@@ -35,13 +35,13 @@ From the list, input the name of the inetrface you wish to sniff
 Packet information should now be seen
 ctrl + c to cancel
 
-### 2 - ANN Data gatherer
+### 2 - ANN Data Gatherer
 This is used to create a dataset to train and test an ANN.
 
 From the list, input the name of the inetrface you wish to gather data from
 ctrl + c to cancel
 
-### 3 - Neural Netwrok Trainer
+### 3 - Neural Network Trainer
 Creates and trains an ANN from a dataset
 
 input name of the CSV dataset file you wish to use
@@ -51,7 +51,7 @@ Depending on model tpology and the size of the dataset, the process may take a w
 ONce finished, input 'y' to see the Weights and intercepts of the model after training
 input 'y' again to save the model (Must end in '.sav') 
 
-### 4 - Data viewer
+### 4 - Data Viewer
 Allows for viewing the data within a dataset
 
 input name of CSV Dataset you wish to view
