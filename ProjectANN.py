@@ -168,7 +168,7 @@ def main():
                 
         def LabelEncoding(data): # encodes the categorical data within the csv used for training, turns the categorical values into integer values
 
-            data = pandas.read_csv('Data.csv', delimiter=',')
+            data = pandas.read_csv('TestingData.csv', delimiter=',')
             columnsToEncode = list(data.select_dtypes(include=['category', 'object']))  
             #print(data.dtypes) #Prints each columns d_type
             #print(columnsToEncode) #Prints categorical features
@@ -228,7 +228,7 @@ def main():
 
             else:
                 from sklearn.neural_network import MLPClassifier #imports the neural network class from Sci-kit learn
-                mlp = MLPClassifier(hidden_layer_sizes=(50),activation='logistic', max_iter=1000, verbose=True, tol=0.00000001, early_stopping = True, shuffle = True) # Designates the setting of the model before training
+                mlp = MLPClassifier(hidden_layer_sizes=(100,100),activation='logistic', max_iter=1000, verbose=True, tol=0.00000001, early_stopping = True, shuffle = True) # Designates the setting of the model before training
                 #hidden_layer_sizes = array of the hidden layer of the network, (5) = one layer of 5 nodes, (5,5) = 2 layers, both with 5 nodes
                 #activation = activation function, 'logistic' is equivalent ot the sigmoid activation function
                 #max_iter = max3imum amoung of iterations that the model will do
