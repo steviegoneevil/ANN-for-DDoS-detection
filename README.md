@@ -33,12 +33,14 @@ This is a basic packet sniffer
 
 From the list, input the name of the inetrface you wish to sniff
 Packet information should now be seen
+
 ctrl + c to cancel
 
 ### 2 - ANN Data Gatherer
 This is used to create a dataset to train and test an ANN.
 
 From the list, input the name of the inetrface you wish to gather data from
+
 ctrl + c to cancel
 
 ### 3 - Neural Network Trainer
@@ -47,8 +49,8 @@ Creates and trains an ANN from a dataset
 input name of the CSV dataset file you wish to use
 If you want to load a previous model, input 'y' and then input the name of the model
 Else just hit Enter
-Depending on model tpology and the size of the dataset, the process may take a while
-ONce finished, input 'y' to see the Weights and intercepts of the model after training
+Depending on model topology and the size of the dataset, the process may take a while
+Once finished, input 'y' to see the Weights and intercepts of the model after training
 input 'y' again to save the model (Must end in '.sav') 
 
 ### 4 - Data Viewer
