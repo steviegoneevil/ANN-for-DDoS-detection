@@ -26,7 +26,7 @@ Open CMD
 
 python ProjectANN.py
 
-Inpur number between 1-7, depending on what you would like to do
+Input number between 1-7, depending on what you would like to do
 
 ### 1 - Packet Sniffer
 This is a basic packet sniffer
