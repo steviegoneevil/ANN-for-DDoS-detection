@@ -14,7 +14,7 @@ netifaces==0.10.6
 numpy==1.14.0
 pandas==0.22.0
 pipreqs==0.4.9
-py==1.5.2
+py==1.10.0
 pypacker==4.1
 pyparsing==2.2.0
 pyshark==0.3.6.2
